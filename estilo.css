@@ -5,3 +5,13 @@
    ============================================================================ */
 
    /* === 1. VARIÁVEIS GLOBAIS ===*/
+   :root{
+    --cor-primaria: #F57C00; 
+    --cor-secundaria: #FBC02D;
+    --cor-acento: #DE0D0D;
+    --cor-fundo: #FFFFFF;  
+    --cor-texto: #424242; 
+
+    
+
+   }
