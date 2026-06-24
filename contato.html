@@ -22,7 +22,171 @@
         </nav>
     </header>
     <main>
+        <h1>Contato &#x1F4DE</h1> <br>
+       
+        <h2>Formulário de Contato</h2>
 
+        <form action="#" method="post">
+
+            <!-- Nome Completo -->
+            <label for="nome">Nome completo:</label>
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                minlength="3"
+                pattern="[A-Za-zÀ-ÿ\s]+"
+                title="Digite apenas letras e espaços."
+                oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')"
+            >
+            <br>
+    
+            <!-- E-mail -->
+            <label for="email">E-mail:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Digite um e-mail válido."
+                placeholder="exemplo@email.com"
+            >
+           <br>
+            <!-- Telefone -->
+            <label for="telefone">Telefone:</label>
+            <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(11) 99999-9999"
+                maxlength="15"
+                pattern="\(\d{2}\)\s\d{4,5}-\d{4}"
+                title="Formato: (11) 99999-9999"
+                oninput="
+                    let v = this.value.replace(/\D/g,'');
+                    if(v.length > 11) v = v.slice(0,11);
+    
+                    if(v.length > 10){
+                        v = v.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
+                    } else {
+                        v = v.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
+                    }
+    
+                    this.value = v;
+                "
+            >
+            <br>
+            <!-- Data de Nascimento -->
+            <label for="dataNascimento">Data de nascimento:</label>
+            <input
+                type="date"
+                id="dataNascimento"
+                name="dataNascimento"
+            >
+           <br>
+            <!-- CEP -->
+            <label for="cep">CEP:</label>
+            <input
+                type="text"
+                id="cep"
+                name="cep"
+                placeholder="00000-000"
+                maxlength="9"
+                pattern="\d{5}-\d{3}"
+                title="Formato: 00000-000"
+                oninput="
+                    let v = this.value.replace(/\D/g,'');
+                    if(v.length > 8) v = v.slice(0,8);
+                    v = v.replace(/^(\d{5})(\d)/, '$1-$2');
+                    this.value = v;
+                "
+            >
+        <br>
+            <!-- Assunto -->
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto">
+                <option value="">Selecione</option>
+                <option value="denuncia">Denúncia</option>
+                <option value="voluntariado">Voluntariado</option>
+                <option value="parceria">Parceria</option>
+                <option value="imprensa">Imprensa</option>
+                <option value="outro">Outro</option>
+            </select>
+         <br>
+            <!-- Como conheceu o site -->
+            <label>Como conheceu o site?</label>
+    
+            <div class="radio-group">
+                <input type="radio" id="google" name="origem" value="google">
+                <label for="google">Google</label>
+    
+                <input type="radio" id="redes" name="origem" value="redes-sociais">
+                <label for="redes">Redes Sociais</label>
+    
+                <input type="radio" id="indicacao" name="origem" value="indicacao">
+                <label for="indicacao">Indicação</label>
+            </div>
+            <br>
+            <!-- Newsletter -->
+            <div class="checkbox-group">
+                <input
+                    type="checkbox"
+                    id="newsletter"
+                    name="newsletter"
+                >
+                <label for="newsletter">Deseja receber newsletters</label>
+            </div>
+           <br>
+            <!-- Mensagem -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="6"
+            ></textarea>
+           <br>
+            <!-- Botão -->
+            <button type="submit">Enviar</button>
+    
+        </form>
+
+        <h2>Informações de Contato</h2>
+
+        <address>
+            <strong>Instituto Esperança</strong><br>
+            Rua das Acácias, 123<br>
+            Bairro Jardim das Flores<br>
+            Santa Esperança - SP<br>
+            CEP: 12345-678<br>
+            Telefone: (11) 99999-9999<br>
+            E-mail: contato@institutoesperanca.org.br
+        </address>
+        
+        <h2>Localização</h2>
+        
+        <iframe
+            title="Mapa da localização do Instituto Esperança"
+            src="https://www.google.com/maps?q=São+Paulo&output=embed"
+            width="600"
+            height="450"
+            allowfullscreen>
+        </iframe>
+        
+        <h2>Horários de Atendimento</h2>
+        
+        <dl>
+            <dt>Segunda a Sexta</dt>
+            <dd>08:00 às 18:00</dd>
+        
+            <dt>Sábado</dt>
+            <dd>09:00 às 13:00</dd>
+        
+            <dt>Domingo</dt>
+            <dd>Fechado</dd>
+        </dl>
+        <br>
     </main>
     <footer>
         <p>Projeto Segurança Alimentar e Fome - 2026</p>
