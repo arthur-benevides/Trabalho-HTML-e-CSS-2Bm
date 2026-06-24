@@ -12,6 +12,14 @@
     --cor-fundo: #FFFFFF;  
     --cor-texto: #424242; 
 
-    
+    --fonte-título: 'Special Elite', serif
+   }
 
+   h1 {font-family:Georgia, 'Times New Roman', Times, serif}
+
+   /* === 2. RESET E CONFIGURAÇÕES GERAIS ===*/
+   *{
+      margin: 1;
+      padding: 1;
+      box-sizing: border-box;
    }
