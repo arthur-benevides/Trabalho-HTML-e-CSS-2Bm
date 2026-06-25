@@ -23,3 +23,54 @@
       padding: 1;
       box-sizing: border-box;
    }
+   /* === 3. TIPOGRAFIA ===*/
+   h1, h2, h3, h4{
+      font-family: var(--fonte-título);
+   }
+
+   h1{
+      font-size: clamp(2rem, 5vw, 4rem);
+   }
+
+   p{
+      margin-bottom: 1rem;
+   }
+
+   /* === 4. COMPONENTES REUTILIZÁVEIS ===*/
+   .botao{
+      background-color: cor var(--cor-primaria);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+   }
+
+   .card{
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+   }
+
+   /* === 5. CABEÇALHO E NAVEGAÇÃO ===*/
+   header{
+      background-color: cor var(--cor-primaria);
+   }
+
+   nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   nav ul{
+      display: flex;
+      list-style: none;
+   }
+
+   nav a{
+      color: cor var(--cor-texto);
+      text-decoration: none;
+   }
+
+   /* === 6. HOME ===*/
+   .hero{min-height: 80vh;}
