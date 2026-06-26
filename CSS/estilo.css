@@ -95,7 +95,63 @@
    }
 
    /* === 6. HOME ===*/
-   .hero{min-height: 80vh;}
+   .hero{min-height: 80vh;
+   
+   background-image: 
+   linear-gradient(--cor-primaria), (cor var(--cor-secundaria)), (cor var(--cor-acento)), url(../Galeria/Imagens/Hero.jpg);
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   align-items: center;
+   padding: 80px;
+}
+
+   .hero-conteudo{
+      max-width: 650px;
+   }
+
+   .subtitulo{
+      color: cor var(--cor-texto);
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+   }
+
+   .hero h1{
+      color: cor var(--cor-texto);
+      font-size: 4rem;
+      margin-bottom: 25px;
+      line-height: 1.2;
+   }
+
+   .descricao{
+      color: var(--cor-texto);
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 40px;
+   }
+
+   .botao{
+      display: inline-block;
+      background-color: var(--cor-destaque);
+      color: cor var(--cor-acento);
+      padding: 15px 35px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+   }
+
+   .botao:hover{
+      background-color: var(--cor-acento);
+      color: var(--cor-destaque);
+      transform: translateY(-3px);
+   }
+
+   .logo{
+      width: 30px;
+      height: 30px
+   }
 
    /* === 7. SOBRE ===*/
    /* === 8. TEMA ===*/
@@ -121,6 +177,12 @@
 
    .galeria img:hover{
       transform: scale(1.1);
+   }
+
+   .video{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-radius: 10px;
    }
    /* === 10. CONTATO ===*/
    input:focus,
