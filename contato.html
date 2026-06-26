@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
 </head>
 <body>
     <header>
@@ -107,16 +107,18 @@
             >
         <br>
             <!-- Assunto -->
-            <label for="assunto">Assunto:</label>
-            <select id="assunto" name="assunto">
-                <option value="">Selecione</option>
-                <option value="denuncia">Denúncia</option>
-                <option value="voluntariado">Voluntariado</option>
-                <option value="parceria">Parceria</option>
-                <option value="imprensa">Imprensa</option>
-                <option value="outro">Outro</option>
-            </select>
-         <br>
+            <div class="assunto">
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="">Selecione</option>
+                    <option value="denuncia">Denúncia</option>
+                    <option value="voluntariado">Voluntariado</option>
+                    <option value="parceria">Parceria</option>
+                    <option value="imprensa">Imprensa</option>
+                    <option value="outro">Outro</option>
+                </select>
+                         <br>
+            </div>
             <!-- Como conheceu o site -->
             <label>Como conheceu o site?</label>
     
@@ -154,7 +156,7 @@
     
         </form>
 
-        <h2>Informações de Contato</h2>
+        <h2>Informações de Contato (Todas essas Informações são ficticias)</h2>
 
         <address>
             <strong>Instituto Esperança</strong><br>
@@ -169,7 +171,7 @@
         <h2>Localização</h2>
         
         <iframe
-            title="Mapa da localização do Instituto Esperança"
+            title="Mapa da localização do Segurança ALimentar e Fome"
             src="https://www.google.com/maps?q=São+Paulo&output=embed"
             width="600"
             height="450"
