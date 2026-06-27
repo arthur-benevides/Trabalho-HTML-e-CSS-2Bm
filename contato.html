@@ -13,148 +13,25 @@
 </head>
 <body>
     <header>
+
+        <h1>Contato &#x1F4DE</h1> 
+
         <nav>
            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="tema.html">Tema </a></li>
-                <li><a href="midia.html">Mídia</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="extra.html">Extra</a></li>
+                <li><a href="index.html">Início <br></a></li>
+                <li><a href="sobre.html">Sobre <br></a></li>
+                <li><a href="tema.html">Tema <br></a></li>
+                <li><a href="midia.html">Mídia <br></a></li>
+                <li><a href="contato.html">Contato <br></a></li>
+                <li><a href="extra.html">Extra <br></a></li>
             </ul>
     </header>
     <main>
-        <h1>Contato &#x1F4DE</h1> <br>
+        <br>
        
         <h2>Formulário de Contato</h2>
 
-        <form action="#" method="post">
-
-            <!-- Nome Completo -->
-            <label for="nome">Nome completo:</label>
-            <input
-                type="text"
-                id="nome"
-                name="nome"
-                required
-                minlength="3"
-                pattern="[A-Za-zÀ-ÿ\s]+"
-                title="Digite apenas letras e espaços."
-                oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')"
-            >
-            <br>
-    
-            <!-- E-mail -->
-            <label for="email">E-mail:</label>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                title="Digite um e-mail válido."
-                placeholder="exemplo@email.com"
-            >
-           <br>
-            <!-- Telefone -->
-            <label for="telefone">Telefone:</label>
-            <input
-                type="tel"
-                id="telefone"
-                name="telefone"
-                placeholder="(11) 99999-9999"
-                maxlength="15"
-                pattern="\(\d{2}\)\s\d{4,5}-\d{4}"
-                title="Formato: (11) 99999-9999"
-                oninput="
-                    let v = this.value.replace(/\D/g,'');
-                    if(v.length > 11) v = v.slice(0,11);
-    
-                    if(v.length > 10){
-                        v = v.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
-                    } else {
-                        v = v.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
-                    }
-    
-                    this.value = v;
-                "
-            >
-            <br>
-            <!-- Data de Nascimento -->
-            <label for="dataNascimento">Data de nascimento:</label>
-            <input
-                type="date"
-                id="dataNascimento"
-                name="dataNascimento"
-            >
-           <br>
-            <!-- CEP -->
-            <label for="cep">CEP:</label>
-            <input
-                type="text"
-                id="cep"
-                name="cep"
-                placeholder="00000-000"
-                maxlength="9"
-                pattern="\d{5}-\d{3}"
-                title="Formato: 00000-000"
-                oninput="
-                    let v = this.value.replace(/\D/g,'');
-                    if(v.length > 8) v = v.slice(0,8);
-                    v = v.replace(/^(\d{5})(\d)/, '$1-$2');
-                    this.value = v;
-                "
-            >
-        <br>
-            <!-- Assunto -->
-            <div class="assunto">
-                <label for="assunto">Assunto:</label>
-                <select id="assunto" name="assunto">
-                    <option value="">Selecione</option>
-                    <option value="denuncia">Denúncia</option>
-                    <option value="voluntariado">Voluntariado</option>
-                    <option value="parceria">Parceria</option>
-                    <option value="imprensa">Imprensa</option>
-                    <option value="outro">Outro</option>
-                </select>
-                         <br>
-            </div>
-            <!-- Como conheceu o site -->
-            <label>Como conheceu o site?</label>
-    
-            <div class="radio-group">
-                <input type="radio" id="google" name="origem" value="google">
-                <label for="google">Google</label>
-    
-                <input type="radio" id="redes" name="origem" value="redes-sociais">
-                <label for="redes">Redes Sociais</label>
-    
-                <input type="radio" id="indicacao" name="origem" value="indicacao">
-                <label for="indicacao">Indicação</label>
-            </div>
-            <br>
-            <!-- Newsletter -->
-            <div class="checkbox-group">
-                <input
-                    type="checkbox"
-                    id="newsletter"
-                    name="newsletter"
-                >
-                <label for="newsletter">Deseja receber newsletters</label>
-            </div>
-           <br>
-            <!-- Mensagem -->
-            <label for="mensagem">Mensagem:</label>
-            <textarea
-                id="mensagem"
-                name="mensagem"
-                rows="6"
-            ></textarea>
-           <br>
-            <!-- Botão -->
-            <button type="submit">Enviar</button>
-    
-        </form>
+         <form action="#" method="post"> <label for="nome">Nome completo *</label> <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required minlength="3" pattern="[A-Za-zÀ-ÿ\s]+" > <br><br> <label for="email">E-mail *</label> <input type="email" id="email" name="email" placeholder="exemplo@email.com" required > <br><br> <label for="telefone">Telefone</label> <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" pattern="\(\d{2}\)\s\d{5}-\d{4}" > <br><br> <label for="dataNascimento">Data de nascimento</label> <input type="date" id="dataNascimento" name="dataNascimento" min="1900-01-01" max="2026-12-31" > <br><br> <label for="cep">CEP</label> <input type="text" id="cep" name="cep" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}" maxlength="9" > <br><br> <label for="assunto">Assunto</label> <select id="assunto" name="assunto"> <option value="">Selecione</option> <option value="denuncia">Denúncia</option> <option value="voluntariado">Voluntariado</option> <option value="parceria">Parceria</option> <option value="imprensa">Imprensa</option> <option value="outro">Outro</option> </select> <br><br> <p>Como conheceu o site?</p> <input type="radio" id="google" name="origem" value="google"> <label for="google">Google</label> <input type="radio" id="redes" name="origem" value="redes"> <label for="redes">Redes Sociais</label> <input type="radio" id="indicacao" name="origem" value="indicacao"> <label for="indicacao">Indicação</label> <input type="radio" id="escola" name="origem" value="escola"> <label for="escola">Escola</label> <br><br> <input type="checkbox" id="newsletter" name="newsletter" > <label for="newsletter"> Desejo receber newsletters. </label> <br><br> <label for="mensagem">Mensagem</label> <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem" ></textarea> <br><br> <button type="submit">Enviar</button> </form>
 
         <h2>Informações de Contato (Todas essas Informações são ficticias)</h2>
 
