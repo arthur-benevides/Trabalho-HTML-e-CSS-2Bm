@@ -8,7 +8,7 @@
    :root{
     --cor-primaria: #F57C00; 
     --cor-secundaria: #fbc02d;
-    --cor-acento: rgb(222, 13, 13);
+    --cor-acento: #de0d0d;
     --cor-fundo: #FFFF;  
     --cor-texto: #424242; 
     --cor-destaque: #FFD54F;
@@ -97,7 +97,7 @@
    /* === 6. HOME ===*/
    .hero{
    min-height: 80vh;  
-   background-image: url(../Galeria/Imagens/Adobe\ Express\ -\ file.jpg);
+   background-image: url(../Imagens/hero.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -154,6 +154,114 @@
    }
 
    /* === 7. SOBRE ===*/
+   .integrantes{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+   }
+
+   .card-integrante{
+      width: 250px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 5px rgb(202, 145, 1) ;
+   }
+
+   .card-integrante:hover {
+      transform: translateY(-5px);
+   }
+
+   .card-integrante img{
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+   }
+
+    .tabela{
+      width: 100%;
+      border-collapse: collapse;
+   }
+
+   .tabela th,
+   .tabela td{
+      border: 1px solid #ccc;
+      padding: 12px;
+   }
+
+   .tabela th{
+      background-color: var(--cor-acento);
+      color: white;
+   }
+
+   .tabela tr:nth-child(even){
+      background-color: var(--cor-primaria);
+   }
+
+   .tabela tr:nth-child(odd){
+      background-color: var(--cor-secundaria);
+   }
+
+   .tabela tbody tr:hover{
+      background-color: #424242;
+      color: white;
+   }
+
+    .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* A LINHA VERTICAL USANDO :before */
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            background-color: var(--cor-acento);
+        }
+
+       .timeline:hover {
+            transform: translateY(-2px);
+       }
+
+        /* ALINHAMENTO */
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .right::after {
+            left: -8px;
+        }
+
+        .conteudoTimeline {
+            padding: 15px;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background-color: var(--cor-secundaria);
+            margin: 20px;
+        }
+
+        .conteudoTimeline h3 {
+            color: var(--cor-primaria);
+            margin-bottom: 5px;
+        }
+
    /* === 8. TEMA ===*/
    .layout{
     display: grid;
@@ -287,4 +395,5 @@
       nav{
          flex-direction: column;
       }
-   }
+         
+      }
