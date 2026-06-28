@@ -1,0 +1,20 @@
+Nome do grupo:
+
+
+
+Nome dos Integrantes:
+
+ -Arthur Benevides
+ -Artur Andrade
+ -Davi Ramos
+ -Miguel Ferreira
+ -William Paz
+
+
+Tema escolhido:
+
+ -O tema que escolhemos foi Segurança Alimentar e Fome
+
+Instruções para abrir o site:
+
+ -Comece pela Página Inicial (index.html)

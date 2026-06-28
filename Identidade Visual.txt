@@ -1,0 +1,21 @@
+Cores:
+
+ -Foi utilizada uma harmonização análoga com um ponto de contraste. Já que as cores Amarelo, Vermelho e Laranja são vizinhas no círculo cromático e são todas quentes. Também utilizamos Branco e Cinza para dar um contraste.
+ -#F57C00 (Laranja); #FBC02D (Amarelo Escuro); #DE0D0D (Vermelho); #FFFFFF (Branco); #424242 (Cinza Escuro); #FFD54F (Amarelo Claro).
+ -O vermelho transmite urgência, e mostra a importância do combate a fome. Laranja representa solidariedade. Amarelo simboliza otimismo de um futuro melhor e energia. Branco transmite simplicidade e organização. Cinza melhora a leitura dos conteúdos.
+ -O tema do site aborda Segurança Alimentar e fome que é um assunto que exige atenção, conscientização e empatia. Por isso optamos por cores que chamem atenção sem serem verdadeiramente agressivas.
+ -Utilizei cores com contraste como o Branco (fundo) e o Cinza (texto)
+
+
+Tipografia:
+
+ -Escolhemos duas famílias tipográficas, a Special Elite que é uma fonte que imita uma máquina de escrever, então ela acaba tendo um aspecto mais velho, assim como o assunto tratado no nosso site que é algo de muito tempo que até hoje não foi resolvido 100%. E utilizamos a Times New Roman com serif que é uma fonte padrão bem sólida mostrando a seriedade do assunto e uma fonte fácil de ser lida.
+ -Na fonte Special Elite ela tem um peso padrão de 400. Já a Times New Roman foi usado Regular 400 e o Bold 700.
+ -O tamanho padrão da Times New Roman é um 16px e utilizamos 1rem pra ela. Já a Special Elite também são 16px e usamos 2rem de mínimo e máximo de 4rem
+
+Favicon e Logo:
+
+ -Usamos um pedaço de carne porque é um alimento com grande valor nutricional e extremamente necessário para um boa dieta. Esse alimento remete a importância de todas as pessoas terem acesso a refeições de qualidade com ótimo valor nutricional 
+
+
+
