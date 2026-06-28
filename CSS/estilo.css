@@ -9,7 +9,7 @@
     --cor-primaria: #F57C00; 
     --cor-secundaria: #fbc02d;
     --cor-acento: rgb(222, 13, 13);
-    --cor-fundo: #FFFFFF;  
+    --cor-fundo: #FFFF;  
     --cor-texto: #424242; 
     --cor-destaque: #FFD54F;
 
@@ -95,12 +95,12 @@
    }
 
    /* === 6. HOME ===*/
-   .hero{min-height: 80vh;
-   
-   background-image: 
-   linear-gradient(--cor-primaria), (cor var(--cor-secundaria)), (cor var(--cor-acento)), url(../Galeria/Imagens/Hero.jpg);
+   .hero{
+   min-height: 80vh;  
+   background-image: url(../Galeria/Imagens/Adobe\ Express\ -\ file.jpg);
    background-size: cover;
    background-position: center;
+   background-repeat: no-repeat;
    display: flex;
    align-items: center;
    padding: 80px;
