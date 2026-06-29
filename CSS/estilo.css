@@ -212,15 +212,14 @@
       color: white;
    }
 
-    .timeline {
+   .timeline {
             position: relative;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px 0;
-        }
+   }
 
-        /* A LINHA VERTICAL USANDO :before */
-        .timeline::before {
+   .timeline::before {
             content: '';
             position: absolute;
             width: 4px;
@@ -229,44 +228,45 @@
             left: 50%;
             margin-left: -2px;
             background-color: var(--cor-acento);
-        }
+   }
 
-       .timeline:hover {
+   .timeline:hover {
             transform: translateY(-2px);
-       }
+   }
 
-        /* ALINHAMENTO */
-        .left {
+   .left {
             left: 0;
-        }
+   }
 
-        .right {
+   .right {
             left: 50%;
-        }
+   }
 
-        .right::after {
+   .right::after {
             left: -8px;
-        }
+   }
 
-        .conteudoTimeline {
+   .conteudoTimeline {
             padding: 15px;
             position: relative;
             border-radius: 6px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             background-color: var(--cor-secundaria);
             margin: 20px;
-        }
+   }
 
-        .conteudoTimeline h3 {
+   .conteudoTimeline h3 {
             color: var(--cor-primaria);
             margin-bottom: 5px;
-        }
+   }
 
    /* === 8. TEMA ===*/
    .layout{
     display: grid;
     grid-template-columns: 1fr 280px;
-    gap: 30px;  
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;  
    }
 
    aside{
